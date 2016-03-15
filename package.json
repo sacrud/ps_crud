@@ -1,0 +1,27 @@
+{
+  "name": "ps_crud",
+  "title": "CRUD templates for pyramid_sacrud Web interface.",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sacrud/ps_crud",
+  "author": {
+    "name": "uralbash",
+    "email": "sacrud@uralbash.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sacrud/ps_crud.git"
+  },
+  "bugs": "https://github.com/sacrud/ps_crud/issues",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.3.13",
+    "materialize-css": "^0.97.5",
+    "jquery": "^2.2.0",
+    "sizzle": "^2.3.0",
+    "string-replace-loader": "^1.0.0",
+    "webpack": "^1.12.13"
+  }
+}

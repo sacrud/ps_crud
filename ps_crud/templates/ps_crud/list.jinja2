@@ -21,6 +21,11 @@ ps_base_url="/" + request.sacrud_prefix + "/" %}
   ps_create_url=ps_base_url + request.resource_path(ps_crud['create']) %}
 {% endif %}
 
+{% block js %}
+  {# {{ super() }} #}
+  <script src="{{ request.static_url('ps_crud:static/ps_crud/js/assets/__main.js') }}"></script>
+{% endblock %}
+
 
 {% block title %} - list of {{ _(context.verbose_name) }}{% endblock %}
 
@@ -51,7 +56,7 @@ ps_base_url="/" + request.sacrud_prefix + "/" %}
   {% endif %}
 
   <div class="container"><br/></div>
-  <form id="sacrud-form" method="post" action="{{ ps_massaction_url }}">
+  <form id="sacrud-form" method="post" action="{{ ps_massaction_url }}delete">
     <table class="bordered highlight hoverable z-depth-1">
       {% if paginator.items.__len__() > 0 %}
         <thead>
