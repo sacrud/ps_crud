@@ -22,7 +22,7 @@ ps_base_url="/" + request.sacrud_prefix + "/" %}
 {% endif %}
 
 {% block js %}
-  {# {{ super() }} #}
+  {{ super() }}
   <script src="{{ request.static_url('ps_crud:static/ps_crud/js/assets/__main.js') }}"></script>
 {% endblock %}
 
@@ -56,7 +56,7 @@ ps_base_url="/" + request.sacrud_prefix + "/" %}
   {% endif %}
 
   <div class="container"><br/></div>
-  <form id="sacrud-form" method="post" action="{{ ps_massaction_url }}delete">
+  <form id="sacrud-form" method="post" action="{{ ps_massaction_url }}">
     <table class="bordered highlight hoverable z-depth-1">
       {% if paginator.items.__len__() > 0 %}
         <thead>
