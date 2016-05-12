@@ -98,7 +98,7 @@ ps_base_url="/" + request.sacrud_prefix + "/" %}
         </tbody>
       {% else %}
         <tr>
-          <td>There are no objects</td>
+          <td>{{ _ps_crud("There are no objects") }}</td>
         </tr>
       {% endif %}
     </table>
