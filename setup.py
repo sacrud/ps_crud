@@ -12,7 +12,7 @@ def read(name):
 
 setup(
     name='ps_crud',
-    version='0.0.4.dev0',
+    version='0.0.4',
     url='http://github.com/sacrud/ps_crud/',
     author='Svintsov Dmitry',
     author_email='sacrud@uralbash.ru',
