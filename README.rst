@@ -1,5 +1,3 @@
-|PyPI|
-
 ps_crud
 =======
 
@@ -22,6 +20,3 @@ License
 =======
 
 The project is licensed under the MIT license.
-
-.. |PyPI| image:: http://img.shields.io/pypi/dm/ps_crud.svg
-   :target: https://pypi.python.org/pypi/ps_crud/
